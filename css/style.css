@@ -355,6 +355,8 @@ header .menu-btn_active span::after {
   font-size: 16px;
   font-weight: bold;
   line-height: 40px;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 
 .main-title_calc-btn {
@@ -368,6 +370,8 @@ header .menu-btn_active span::after {
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 30px;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
 }
 
 .main-title_calc-btn .fa-calculator {
@@ -396,6 +400,8 @@ header .menu-btn_active span::after {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
 }
 
 .main-title_btns a {
@@ -801,10 +807,21 @@ header .menu-btn_active span::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
-.concept-img_circle::before, .concept-img_circle::after {
-  content: '';
+.concept-img_circle img {
+  position: absolute;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+.concept-img_circle-item {
   width: 480px;
   height: 480px;
   position: absolute;
@@ -815,11 +832,19 @@ header .menu-btn_active span::after {
   -webkit-box-shadow: inset 0 0 15px 1px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 1px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
 }
 
-.concept-img_circle::after {
-  width: 330px;
-  height: 330px;
+.concept-img_circle-item:nth-child(2) {
+  width: 350px;
+  height: 350px;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .concept-title h2 {
@@ -829,6 +854,10 @@ header .menu-btn_active span::after {
   color: #fff;
   width: 395px;
   letter-spacing: -1px;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .concept-title p {
@@ -836,6 +865,10 @@ header .menu-btn_active span::after {
   line-height: 30px;
   font-size: 14px;
   margin-bottom: 40px;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .concept-title a {
@@ -850,6 +883,10 @@ header .menu-btn_active span::after {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin-right: 20px;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .concept-title a:hover {

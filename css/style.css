@@ -53,7 +53,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 991;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +63,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 
 header .logo {
@@ -137,8 +139,9 @@ header .menu-btn {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 30px;
-  position: relative;
-  z-index: 899;
+  position: absolute;
+  right: 20px;
+  z-index: 999;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -213,7 +216,7 @@ header .menu-btn_active span::after {
 
 .navbar {
   position: fixed;
-  z-index: 799;
+  z-index: 992;
   right: 0;
   top: 0;
   width: 340px;
@@ -601,21 +604,6 @@ header .menu-btn_active span::after {
   }
 }
 
-.advantage {
-  width: 100%;
-  height: 100vh;
-  background: #e1144b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .advantage .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,21 +745,6 @@ header .menu-btn_active span::after {
   background: #5f5f5f;
   vertical-align: middle;
   margin-right: 5px;
-}
-
-.concept {
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #07befa;
 }
 
 .concept .wrapper {
@@ -1074,6 +1047,36 @@ header .menu-btn_active span::after {
           align-items: center;
 }
 
+.footer .contacts .slogan {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.footer .contacts .slogan span {
+  color: #676767;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer .contacts .slogan span:nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .footer .contacts a {
   color: #676767;
   font-family: 'Montserrat Bold';
@@ -1096,5 +1099,87 @@ header .menu-btn_active span::after {
 #fp-nav ul li .fp-tooltip {
   color: #ffffff;
   font-size: 15px;
+}
+
+.portfolio-bg {
+  height: 350px;
+  background: url(../img/portfolio-bg.jpg) center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-bg h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.portfolio-bg p {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 26px;
+}
+
+.portfolio-project {
+  width: 100%;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-content span {
+  color: #c8c8c8;
+  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */

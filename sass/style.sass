@@ -26,10 +26,11 @@ header
     position: fixed
     top: 0
     left: 0
-    z-index: 999
+    z-index: 991
     display: flex
     justify-content: space-between
     align-items: center
+    transition: background 0.5s linear
     & .logo
         transform: translate(-100%)
     & .social
@@ -66,8 +67,9 @@ header
         justify-content: center
         align-items: center
         margin-right: 30px
-        position: relative
-        z-index: 899
+        position: absolute
+        right: 20px
+        z-index: 999
         cursor: pointer
         transition: 0.3s
         & span
@@ -112,7 +114,7 @@ header
 
 .navbar
     position: fixed
-    z-index: 799
+    z-index: 992
     right: 0
     top: 0
     width: 340px
@@ -332,17 +334,10 @@ header
         transform: scale(1.1)
         opacity: 0
         
-.advantage
-    width: 100%
-    height: 100vh
-    background: #e1144b
+.advantage .wrapper
     display: flex
-    justify-content: center
+    justify-content: space-between
     align-items: center
-    & .wrapper
-        display: flex
-        justify-content: space-between
-        align-items: center
 .adv-column 
     width: 300px
     height: 535px
@@ -381,7 +376,6 @@ header
     display: flex
     justify-content: flex-start
     align-items: center
-
 .ecommerce-img
     transform: translate(-20%)
     & img
@@ -421,12 +415,6 @@ header
                 margin-right: 5px
             
 .concept
-    width: 100%
-    height: 100vh
-    display: flex
-    justify-content: center
-    align-items: center
-    background: #07befa
     & .wrapper
         display: flex
         justify-content: space-between
@@ -604,6 +592,20 @@ header
         flex-direction: column
         justify-content: space-between
         align-items: center
+        & .slogan
+            width: 250px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            margin-bottom: 30px
+            & span
+                color: #676767
+                font-size: 24px
+                font-weight: bold
+                letter-spacing: 1px
+                &:nth-child(2)
+                    align-self: flex-end
         & a
             color: #676767
             font-family: 'Montserrat Bold'
@@ -619,3 +621,50 @@ header
 #fp-nav ul li .fp-tooltip
     color: #ffffff
     font-size: 15px
+
+// portfolio-template
+
+.portfolio-bg
+    height: 350px
+    background: url(../img/portfolio-bg.jpg) center no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    & h2
+        font-size: 40px
+        line-height: 50px
+        font-weight: 300
+        color: #fff
+        letter-spacing: -1px
+        margin: 0
+    & p
+        color: #ffffff
+        line-height: 30px
+        font-size: 26px
+        
+.portfolio-project
+    width: 100%
+    padding-top: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+
+footer
+    width: 100%
+    height: 100px
+    background: #252525
+    display: flex
+    justify-content: center
+    align-items: center
+
+.footer-content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    & span
+        color: #c8c8c8
+        font-size: 13px
+    

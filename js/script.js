@@ -5,6 +5,7 @@ $(document).ready(function(){
         navigation: true,
         anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'service','section7',],
         navigationTooltips: ['Главная  -  ', 'Разработка веб-сайтов  -  ', 'Наши преимущества  -  ', 'Создание интернет магазинов  -  ', 'Концепт  -  ', 'Услуги  -  '],
+        sectionsColor: ['#fff', '#fff', '#e1144b', 'fff', '#07befa', '#fff', '#fff'],
         onLeave: function(origin, destination, direction){
             // console.log(destination.index);
             if(destination.index == 1){
@@ -17,7 +18,7 @@ $(document).ready(function(){
                 light();
             }
 
-            if(destination.index > 0) {
+            if(!destination.isFirst) {
                 $(".main-bg").removeClass("main-animation");
                 $('.main-hero').children('img').removeClass('animated fadeInUp');
                 $('.main-title').removeClass('animated fadeInUp');
@@ -88,12 +89,5 @@ $(document).ready(function(){
         $('#fp-nav ul li .fp-tooltip').css('color', '#ffffff');
         $('header .social-icon_icons, header .social-icon_icons a').css('color', '#ffffff');
     }
-    function addAnimation(){
-        
-    }
-    function removeAnimation(){
-       
-    }
-
 });
 

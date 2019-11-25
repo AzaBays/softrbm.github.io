@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="portfolio-header">
+        <div class="social">
+            <span class="social-icon twitter">
+                <span class="social-icon_icons">
+                    <i class="fab fa-twitter"></i>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </span>
+            </span>
+            <span class="social-icon facebook">
+                <span class="social-icon_icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </span>
+            </span>
+            <span class="social-icon g-plus">
+                <span class="social-icon_icons">
+                    <i class="fab fa-google-plus-g"></i>
+                    <a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                </span>
+            </span>
+            <span class="social-icon g-plus">
+                <span class="social-icon_icons">
+                    <i class="fab fa-vk"></i>
+                    <a href="#" target="_blank"><i class="fab fa-vk"></i></a>
+                </span>
+            </span>
+        </div>
+        <div class="logo">
+            <a href="#"><img src="" alt=""></a>
+        </div>
+        <div class="menu-btn" id="hamburger">
+            <span class="menu-btn-items"><span style="animation-delay: 0.4s;"></span></span>
+            <span class="menu-btn-items"><span></span></span>
+            <span class="menu-btn-items"><span></span></span>
+        </div>
+        <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a style="animation-delay: 0.8s;" href="index.html">Главная</a></li>
+                        <li><a style="animation-delay: 0.9s;" href="about.html">О нас</a></li>
+                        <li><a style="animation-delay: 1s;" href="portfolio.html">Работы</a></li>
+                        <li><a style="animation-delay: 1.1s;" href="index.html#service">Услуги</a></li>
+                        <li><a style="animation-delay: 1.2s;" href="configurator.html">Цены</a></li>
+                        <li><a style="animation-delay: 1.3s;" href="contact.html">Контакт</a></li>
+                        <li><a style="animation-delay: 1.4s;" href="#">Новости</a></li>
+                    </ul>
+                    <div class="contacts">
+                        <div class="contacts-phone">
+                            <a href="#"><i class="fas fa-phone-alt"></i> +998 97 000 00 00</a>
+                        </div>
+                        <div class="contacts-location">
+                            <a href="#"><i class="fas fa-map-marker-alt"></i> Узбекистан, Ташкент</a>
+                        </div>
+                    </div>
+        
+                    <div class="copyright">
+                        ©SoftRBM 2019
+                    </div>
+                </nav>
+            </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="configurator">
+            <div class="configurator-title">
+                <h1>Онлайн калькулятор</h1>
+                <p>Сконфигурируйте требуемый веб-сайт за 5 минут и получите подробный расчет стоимости разработки прямо сейчас.</p>
+            </div>
+            <div class="configurator-progress-bar">
+                <div class="bg-line">
+                    <div class="progress-line"></div>
+                    <div class="price-place">
+                        $<span>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="configurator-content">
+                <form action="">
+                    <div class="content type">
+                        <h6>Выберите тип разработки</h6>
+                        <div class="content-items">
+                            <div class="content-item" id="landing">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/landing-page.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Лендинг пейдж">
+                                <span class="content-item-popup">Дизайн лендинг пейджа</span>
+                                <div class="content-item-title">Лендинг пейдж</div>
+                            </div>
+                            <div class="content-item" id="web-portfolio">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/blogging.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Веб-блог/Портфолио">
+                                <span class="content-item-popup">Дизайн веб-блога / Портфолио</span>
+                                <div class="content-item-title">Веб-блог/Портфолио</div>
+                            </div>
+                            <div class="content-item" id="multi-page">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/corp-website.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Многостраничный сайт">
+                                <span class="content-item-popup">Дизайн многостраничного сайта</span>
+                                <div class="content-item-title">Многостраничный сайт</div>
+                            </div>
+                            <div class="content-item" id="portal">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/port.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Интернет-портал">
+                                <span class="content-item-popup">Дизайн интернет-портала</span>
+                                <div class="content-item-title">Интернет-портал</div>
+                            </div>
+                            <div class="content-item" id="e-shop">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/online-shop.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Интернет-магазин">
+                                <span class="content-item-popup">Дизайн интернет-магазина</span>
+                                <div class="content-item-title">Интернет-магазин</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content param">
+                        <h6>Параметры разработки</h6>
+                        <div class="content-items">
+                            <div class="content-range" id="page">
+                                <span>Количество изначальных страниц</span>
+                                <outer for="page-range" class="range-volume" id="page-volume">1</outer>
+                                <input id="page-range" type="range" min="1" max="35" step="1" value="1">
+                                <span>Выберите количество требуемых страниц для начала работы сайта</span>
+                            </div>
+                            <div class="content-range" id="item">
+                                <span>Количество изначальных продуктов для заполнения</span>
+                                <outer for="item-range" class="range-volume" id="item-volume">1</outer>
+                                <input id="item-range" type="range" min="1" max="35" step="1" value="1">
+                                <span>Выберите количество требуемых продуктов для заполнения</span>
+                            </div>
+                            <div class="content-item" id="content">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/fill_it.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно заполнить данные страницы контентом">
+                                <span class="content-item-popup">Заполнение страниц контентом</span>
+                                <div class="content-item-title">Нужно заполнить данные страницы контентом</div>
+                            </div>
+                            <div class="content-item" id="content-img">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/image_add.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <span class="content-item-popup">Подбор картинок</span>
+                                <div class="content-item-title">Нужно подобрать картинки</div>
+                            </div>
+                            <div class="content-item" id="multi-lang">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/add_lang.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Добавить языки">
+                                <span class="content-item-popup">Поддержка мультиязычности</span>
+                                <div class="content-item-title">Добавить языки</div>
+                            </div>
+                        </div>
+                        <div class="content-checkbox" id="checkbox">
+                            <div class="checkbox">
+                                <span class="checkbox-title">Русский язык</span>
+                                <input type="checkbox" checked  id="russian">
+                            </div>
+                            <div class="checkbox">
+                                <span class="checkbox-title">Узбекский язык</span>
+                                <input type="checkbox" id="uzbek">
+                            </div>
+                            <div class="checkbox">
+                                <span class="checkbox-title">Английский язык</span>
+                                <input type="checkbox" id="english">
+                            </div>
+                        </div>
+                        <div class="alert">Выберите опцию чтобы продолжить</div>
+                        <button class="content-btn-success"><i class="fas fa-check"></i> Далее</button>
+                    </div>
+                    <div class="content payment">
+                        <h6>Системы оплаты</h6>
+                        <p data-option="option">Опционально</p>
+                        <div class="content-items">
+                            <div class="content-item" id="bank">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/bank.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно заполнить данные страницы контентом">
+                                <span class="content-item-popup">Интеграция банковских перефодов</span>
+                                <div class="content-item-title">Банковский перевод</div>
+                            </div>
+                            <div class="content-item" id="form-payment">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/other_pay.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <span class="content-item-popup">Интеграция других форм отплаты</span>
+                                <div class="content-item-title">Другие формы оплаты</div>
+                            </div>
+                        </div>
+                        <button class="content-btn-success"><i class="fas fa-check"></i> Далее</button>
+                    </div>
+                    <div class="content add-service">
+                        <h6>Дополнительные сервисы</h6>
+                        <p data-option="option">Опционально</p>
+                        <div class="content-items">
+                            <div class="content-item" id="seo">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/seo.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно заполнить данные страницы контентом">
+                                <span class="content-item-popup">Оптимизация для поисковых систем (SEO)</span>
+                                <div class="content-item-title">Оптимизация для поисковых систем (SEO)</div>
+                            </div>
+                            <div class="content-item" id="online-chat">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/online-chat.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <span class="content-item-popup">Интеграция онлайн-чата</span>
+                                <div class="content-item-title">Интеграция онлайн-чата</div>
+                            </div>
+                            <div class="content-item" id="online-booking">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/booking.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <span class="content-item-popup">Интеграция системы онлайн-букинга</span>
+                                <div class="content-item-title">Онлайн-букинг</div>
+                            </div>
+                            <div class="content-item" id="e-mailing">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/emails.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <span class="content-item-popup">Интеграция email-рассылки</span>
+                                <div class="content-item-title">Email-рассылка</div>
+                            </div>
+                        </div>
+                        <div class="content-checkbox">
+                            <div class="checkbox">
+                                <span class="checkbox-title">Google Analytics</span>
+                                <input type="checkbox" id="google">
+                                <span>Google Аналитка посещяемости посетителей</span>
+                            </div>
+                            <div class="checkbox">
+                                <span class="checkbox-title">Yandex Metrika</span>
+                                <input type="checkbox" id="yandex">
+                                <span>Yandex Аналитка посещяемости посетителей</span>
+                            </div>
+                            <div class="checkbox">
+                                <span class="checkbox-title">Создание Facebook страницы</span>
+                                <input type="checkbox" id="facebook">
+                                <span>Мы создадим и привяжем FB страницу Вашей компании</span>
+                            </div>
+                        </div>
+                        <button class="content-btn-success"><i class="fas fa-check"></i> Далее</button>
+                    </div>
+                    <div class="content other-service">
+                        <h6>Вам нужна помощь?</h6>
+                        <p data-option="option">Опционально</p>
+                        <div class="content-items">
+                            <div class="content-item" id="support">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/support.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно заполнить данные страницы контентом">
+                                <span class="content-item-popup">Поддержка сайта (5ч/мес)</span>
+                                <div class="content-item-title">Поддержка работы сайта и внесение мелких изменений</div>
+                            </div>
+                            <div class="content-item" id="learn">
+                                <div class="content-item-img">
+                                    <img src="./img/icons/learn.png" alt="">
+                                    <span class="cross"><i class="fas fa-times"></i></span>
+                                    <span class="success"><i class="fas fa-check"></i></span>
+                                </div>
+                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <span class="content-item-popup">Обучение (3ч)</span>
+                                <div class="content-item-title">Мы объясним как управлять веб-сайтом, не поломав основную структуру веб-сайта</div>
+                            </div>
+                        </div>
+                        <button class="content-btn-success"><i class="fas fa-check"></i> Далее</button>
+                    </div>  
+                    <div class="content total">
+                        <h6>Итог</h6>
+                        <p>Стоимость указана без НДС. Желаете получить подробный расчет стоимости разработки?</p>
+                        <span class="count">$1200</span>
+                        <div class="form" id="form-section">
+                            <div class="form-contacts">
+                                <div class="form-contacts-box">
+                                    <div class="form-contacts-box-text">Ваше имя (обязательно)</div>
+                                    <input type="text" name="name" class="input" required>
+                                </div>
+                                <div class="form-contacts-box">
+                                    <div class="form-contacts-box-text">Ваш номер телефона (обязательно)</div>
+                                    <input type="text" name="phone" class="input" required>
+                                </div>
+                                <div class="form-contacts-box">
+                                    <div class="form-contacts-box-text">Ваш e-mail (обязательно)</div>
+                                    <input type="text" name="email" class="input" required>
+                                </div>
+                            </div>
+                            <div class="form-textarea">
+                                <div class="form-contacts-box-text">Сообщение</div>
+                                <textarea class="input" name="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="alert">Введите данные что бы продолжить!</div>
+                        <button type="submit" class="content-btn-success"><i class="fas fa-calculator"></i> Отправить</button>
+                    </div>  
+                    <div class="content total">
+                        <h6>Спасибо! Ваш запрос принят.</h6>
+                        <p>В билжайшее время свами свяжется наш менеджер</p>
+                    </div>  
+                </form>
+            </div>
+            <div class="configurator-subtitle">
+                <span>Реальная стоимость. Подробный расчет.</span>
+            </div>
+        </div>
+    </div>
+  
+    <footer>
+        <div class="wrapper">
+            <div class="footer-content">
+                <span>Студия концептуальной веб-разработки</span>
+                <span>© soft RBM - 2019</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/template.js"></script>
+   
+</body>
+</html>

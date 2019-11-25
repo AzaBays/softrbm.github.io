@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/card3d.css">
 </head>
 <body>
     <header class="portfolio-header">
@@ -73,69 +71,66 @@
             </div>
     </header>
     
-    
-    <main>
-        <div class="portfolio-bg">
-            <h2>Портфолиио студии веб-разработки</h2>
-            <p>Небольшая часть наших лучших работ</p>
+    <div class="contact-video">
+        <video id="contact-videoBG" poster="./img/poster.png" autoplay muted loop>
+            <source src="./img/video_contact.mp4" type="video/mp4">
+        </video>
+        <div class="contact-video-layer">
+            <h1>Мы реализуем Вашу бизнес модель</h1>
         </div>
-        <div class="portfolio-project">
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
+    </div>
+    <div class="contact-adress">
+        <div class="adress">
+            <img src="./img/tashkent.jpg" alt="">
+            <div class="adress-content">
+                <h5>Узбекистан, Ташкент</h5>
+                <span>+998 99 000 00 00</span> <br>
+                <span>Узбекистан, Ташкент, ул. Воронеж 101а </span> <br>
+                <span>info@gmail.com</span><br>
+                <div class="adress-content-arrow">
+                    <span>Связаться с нами </span>
+                    <span class="arrow">
+                        <span class="arrow-line"></span>
+                        <i class="fa fa-chevron-right"></i>
+                    </span>
                 </div>
             </div>
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>  
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>
+            <a class="adress-link-layer" href="#form-section" data-target="target"></a>
+            <span class="adress-bottom-border"></span>
         </div>
-    </main>
+    </div>
+
+    <div class="wrapper">
+        <div class="form" id="form-section">
+            <div class="form-title">
+                <span>Связаться с нами</span>
+                <h5>Желаете задать вопрос?</h5>
+                <p>Вы можете написать нам в чат для короткого вопроса и мы сразу ответим Вам. В противном случае, заполните формуляр ниже и мы ответим Вас в скором времени.</p>
+            </div>
+            <form action="">
+                <div class="form-contacts">
+                    <div class="form-contacts-box">
+                        <div class="form-contacts-box-text">Ваше имя (обязательно)</div>
+                        <input type="text" name="name" class="input" required>
+                    </div>
+                    <div class="form-contacts-box">
+                        <div class="form-contacts-box-text">Ваш номер телефона (обязательно)</div>
+                        <input type="text" name="name" class="input" required>
+                    </div>
+                    <div class="form-contacts-box">
+                        <div class="form-contacts-box-text">Ваш e-mail (обязательно)</div>
+                        <input type="text" name="name" class="input" required>
+                    </div>
+                </div>
+                <div class="form-textarea">
+                    <div class="form-contacts-box-text">Сообщение</div>
+                    <textarea class="input"></textarea>
+                </div>
+                <input type="submit" value="Отправить" class="form-btn">
+            </form>
+        </div>
+    </div>
+
     <footer>
         <div class="wrapper">
             <div class="footer-content">
@@ -146,14 +141,7 @@
     </footer>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/jquery.hover3d.min.js"></script>
-    <script src="./js/wow.min.js"></script>
     <script src="./js/template.js"></script>
-    <script>
-        $(".project").hover3d({
-            selector: ".project__card",
-        });
-    </script>
-
+   
 </body>
 </html>

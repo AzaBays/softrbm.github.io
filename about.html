@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/card3d.css">
 </head>
 <body>
     <header class="portfolio-header">
@@ -73,69 +71,34 @@
             </div>
     </header>
     
+    <video id="videoBG" poster="./img/poster.png" autoplay muted loop>
+        <source src="./img/video_about.mp4" type="video/mp4">
+    </video>
     
-    <main>
-        <div class="portfolio-bg">
-            <h2>Портфолиио студии веб-разработки</h2>
-            <p>Небольшая часть наших лучших работ</p>
+    <div class="section-video">
+        <div class="section-video-title">
+            <!-- <img src="./img/logo.png" alt=""> -->
+            <span><i class="fa fa-globe-americas"></i>RBM-soft</span>
+            <span>Создание веб-сайтов и веб-приложений</span>
         </div>
-        <div class="portfolio-project">
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
-                </div>
-            </div>  
-            <div class="project">
-                <div class="project__card">
-                    <a href="" class="project__image"><img src="img/preview-portfolio.jpg" width=500 height=500 alt=""></a>
-                    <div class="project__detail">
-                        <h2 class="project__title"><a href="#">Project Name</a></h2>
-                        <small class="project__category"><a href="#">Photography</a></small>
-                    </div>
+        <div class="section-video-arrow">
+            <a href="#section-about" data-target="target">
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+    <div class="section-about" id="section-about">
+        <div class="section-about-wrapper">
+            <div class="section-about-wrapper-content">
+                <div class="wrapper">
+                    <h1>Желаете веб-сайт, <br> интернет-магазин <br> или веб-приложение? <br> Веб-студия RBM-soft!</h1>
+                    <p>Веб-студия RBM-soft является профессиональной командой разработчиков и менеджеров по продукту и имеет колоссальный опыт работы в России, Франции и Германии. За нашими плечами несколько успешных стартапов в сфере рекламы, интернет-торговли и онлайн-сервиса. Мы будем рады сотрудничеству.</p>
+                    <a href="portfolio.html">Наши работы</a>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
     <footer>
         <div class="wrapper">
             <div class="footer-content">
@@ -146,14 +109,7 @@
     </footer>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/jquery.hover3d.min.js"></script>
-    <script src="./js/wow.min.js"></script>
     <script src="./js/template.js"></script>
-    <script>
-        $(".project").hover3d({
-            selector: ".project__card",
-        });
-    </script>
-
+   
 </body>
 </html>

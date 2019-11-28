@@ -1,0 +1,193 @@
+@media screen and (max-width: 1366px){
+    .main-img img{
+        width: 270px;
+    }
+    .main-title h1{
+        font-size: 40px;
+    }
+    .ecommerce-title{
+        width: 400px;
+    }
+    .ecommerce-img img{
+        width: 750px;
+    }
+    .ecommerce-title h2{
+        font-size: 30px;
+    }
+    .ecommerce-title p,
+    .ecommerce-title_list ul li{
+        font-size: 14px;
+    }
+    .concept-img_circle{
+        width: 470px;
+        height: 470px;
+    }
+    .concept-img_circle-item{
+        width: 390px;
+        height: 390px;
+    }
+    .concept-img_circle-item:nth-child(2){
+        width: 310px;
+        height: 310px;
+    }
+    .webapps-content h4{
+        font-size: 22px;
+    }
+    .webapps-content p{
+        font-size: 14px;
+    }
+    .project, .partners{
+        width: 30%;
+    }
+    .contact-video{
+        height: 315px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .wrapper{
+        width: 920px;
+    }
+    .advantage .wrapper{
+        justify-content: space-around;
+    }
+    .adv-column:nth-child(2){
+        display: none;
+    }
+    .adv-column .adv-column_item{
+        align-items: center;
+    }
+    .adv-column:nth-child(3) .adv-column_item{
+        align-items: center;
+    }
+    .adv-column .adv-column_item span{
+        text-align: center;
+    }
+    .adv-column:nth-child(3) .adv-column_item span{
+        text-align: center;
+    }
+    .ecommerce{
+        width: 920px;
+        margin: 0 auto;
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .ecommerce-title{
+        width: 540px;
+    }
+    .ecommerce-img img{
+        width: 600px;
+    }
+    .ecommerce-title h2{
+        margin: 0;
+    }
+    .concept-title h2{
+        font-size: 31px;
+    }
+    .webapps{
+        flex-direction: column;
+    }
+    .webapps .webapp{
+        width: 100%;
+        height: 40%;
+        background-position: top;
+    }
+    .webapps-content{
+        padding: 35px;
+    }
+    .webapps .website{
+        width: 100%;
+        height: 60%;
+        display: flex;
+    }
+    .webapps .website-ecom, .webapps .website-dev{
+        width: 50%;
+        height: 100%;
+        background-position: 70% 100%;
+    }
+    .contact-adress .adress{
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 920px){
+    .wrapper{
+        width: 750px;
+    }
+    .developing h2,
+    .developing p{
+        text-align: center;
+    }
+    .developing-mockup{
+        width: 650px;
+    }
+    .contact-adress .adress{
+        height: 350px;
+    }
+    .form form{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .content .form{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .form-contacts{
+        width: 48%;
+        flex-direction: column;
+    }
+    .form-contacts-box{
+        width: 100%;
+    }
+    .form-textarea{
+        width: 48%;
+    }
+    textarea{
+        height: 130px !important; 
+    }
+}
+
+@media screen and (max-width: 780px){
+    .wrapper{
+        width: 690px;
+    }
+    .main .wrapper{
+        justify-content: center;
+    }
+    .main-img img{
+        display: none;
+    }
+    .ecommerce{
+        width: 690px;
+    }
+    .concept-img{
+        display: none;
+    }
+    .concept-title{
+        width: 600px;
+    }
+    .webapps .webapp{
+        height: 33%;
+        background-position: top;
+    }
+    .webapps .website{
+        height: 77%;
+        flex-direction: column;
+    }
+    .webapps .website-ecom, .webapps .website-dev{
+        width: 100%;
+        height: 50%;
+    }
+    .project, .partners{
+        width: 46%;
+    }
+    .contact-video-layer h1{
+        font-size: 35px;
+    }
+    .contact-adress .adress{
+        width: 80%;
+    }
+    
+}

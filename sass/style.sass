@@ -12,6 +12,7 @@ body
         width: 15px
         background: #3a3a3a
         border-radius: 10px
+
 *
     box-sizing: border-box
 
@@ -142,7 +143,7 @@ header
             &:hover
                 color: #fff
     & .contacts
-        margin: 150px 0 0 60px
+        margin: 100px 0 0 60px
         &-phone,
         &-location
             margin-bottom: 20px
@@ -168,20 +169,20 @@ header
     position: relative
 
 .main
-    height: 100%
+    height: 100vh
     position: relative
     object-fit: cover
+    display: flex
+    justify-content: center
+    align-items: center
     &-bg
         position: absolute
         z-index: 0
     & .wrapper
-        position: absolute
-        bottom: -40px
-        left: 50%
-        transform: translate(-50%) 
+        position: relative
         display: flex
         justify-content: space-around
-        align-items: flex-start
+        align-items: center
 
 .main-animation
     animation: mainbg 10s linear 1
@@ -192,7 +193,9 @@ header
         transform: scale(1)
     100%
         transform: scale(1.1) 
-        
+.main-img img
+    width: 320px    
+
 .main-title
     width: 460px
     & h1
@@ -268,11 +271,9 @@ header
         margin-bottom: 30px
     &-mockup
         position: relative
-        width: 950px
-        height: 625px
-        background: url(../img/Mockup-imac.png) no-repeat center
-        background-size: cover
-
+        object-fit: cover
+        & img
+            width: 100%
         & .mockups
             position: absolute
             display: flex
@@ -309,23 +310,23 @@ header
                 padding: 25px
                 border-radius: 10px
                 box-shadow: 0 20px 70px 5px #b4b4b4
-                margin-top: 20px
+                margin-top: 10px
                 opacity: 0
                 transition: 0.4s
                 font-size: 13px
                 & strong
                     color: #ff3a4c
                     margin-bottom: 5px
-        & .mockups:nth-child(1)
+        & .mock1
             top: 14%
             left: 7%
-        & .mockups:nth-child(2)
-            top: 9%
+        & .mock2
+            top: 11%
             right: 7%
-        & .mockups:nth-child(3)
+        & .mock3
             top: 46%
             left: 20%
-        & .mockups:nth-child(4)
+        & .mock4
             top: 42%
             right: 22%
 @keyframes mock-pulse
@@ -363,7 +364,7 @@ header
         position: relative
         & img
             position: absolute
-            width: 110%
+            width: 100%
             &:first-child
                 top: -30px
                 left: -30px
@@ -379,55 +380,49 @@ header
 
 .ecommerce
     display: flex
-    justify-content: flex-start
+    justify-content: center
     align-items: center
-.ecommerce-img
-    transform: translate(-20%)
-    & img
-        width: 1100px
-.ecommerce-title
-    align-self: flex-start
-    width: 510px
-    transform: translate(-20%)
-    & h2
-        color: #39dfa5
-        background: linear-gradient(to bottom right,#39dfa5,#1fbdf2)
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
-        background-clip: text
-        text-fill-color: transparent
-        font-family: 'Roboto'
-        font-size: 38px
-        font-weight: 400
-        margin: 60px 0
-    & p
-        font-size: 16px
-        color: #5f5f5f
-        line-height: 24px
-    &_list ul
-        padding: 0
-        margin: 0
-        & li
-            color: #5f5f5f
+    &-img img
+        width: 900px
+    &-title
+        width: 510px
+        & h2
+            color: #39dfa5
+            background: linear-gradient(to bottom right,#39dfa5,#1fbdf2)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+            font-family: 'Roboto'
+            font-size: 38px
+            font-weight: 400
+            margin: 60px 0
+        & p
             font-size: 16px
-            line-height: 30px
-            vertical-align: middle
-            & span
-                display: inline-block
-                width: 15px
-                height: 1px
-                background: #5f5f5f
+            color: #5f5f5f
+            line-height: 24px
+        &_list ul
+            padding: 0
+            margin: 0
+            & li
+                color: #5f5f5f
+                font-size: 16px
+                line-height: 30px
                 vertical-align: middle
-                margin-right: 5px
+                & span
+                    display: inline-block
+                    width: 15px
+                    height: 1px
+                    background: #5f5f5f
+                    vertical-align: middle
+                    margin-right: 5px
             
 .concept
     & .wrapper
         display: flex
-        justify-content: space-between
+        justify-content: center
         align-items: center
     &-img
-        padding: 40px
-        width: 630px
         &_circle
             width: 630px
             height: 630px
@@ -460,6 +455,7 @@ header
                 animation-iteration-count: 1
                 animation-delay: 1.5s
     &-title
+        margin-left: 30px 
         & h2
             font-size: 40px
             line-height: 50px
@@ -637,7 +633,7 @@ header
 
 // portfolio-template
 
-.portfolio-bg
+.template-bg
     height: 350px
     background: url(../img/portfolio-bg.jpg) center no-repeat
     background-size: cover
@@ -657,9 +653,10 @@ header
         line-height: 30px
         font-size: 26px
         
-.portfolio-project
+.portfolio-project,
+.partners-project
     width: 100%
-    padding: 40px
+    padding: 40px 0 40px 40px
     display: flex
     flex-wrap: wrap
     justify-content: flex-start
@@ -672,7 +669,6 @@ footer
     display: flex
     justify-content: center
     align-items: center
-
 .footer-content
     display: flex
     flex-direction: column
@@ -813,7 +809,7 @@ footer
     padding: 40px 0
     & .adress
         width: 45%
-        height: 500px
+        height: 400px
         margin: 0 auto
         position: relative
         object-fit: cover
@@ -831,7 +827,7 @@ footer
             width: 100%
             height: 100%
             background: rgba(0,0,0,0.6)
-            padding: 100px
+            padding: 50px
             transition: 0.8s
             & h5
                 font-family: 'Roboto'
@@ -1097,7 +1093,7 @@ textarea
                 height: 140px
                 cursor: pointer
                 position: relative
-                margin: 0 10px
+                margin: 10px
                 &-img
                     position: relative
                     display: flex
@@ -1263,3 +1259,26 @@ textarea
 @keyframes success
     100%
         opacity: 1
+
+.detail
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 100px 0
+    &-content
+        padding-left: 50px 
+        &-title p
+            color: #4f5355
+            line-height: 28px
+        &-worklist ul li
+            color: #4f5355
+            line-height: 28px
+            list-style-type: disc
+            margin-left: 50px
+        &-worklist span
+            color: #4f5355
+            line-height: 28px
+            & a 
+                color: #4f5355
+            & a:hover
+                color: #ff3a4c

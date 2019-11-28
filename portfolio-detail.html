@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/card3d.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
@@ -72,34 +74,41 @@
             </div>
     </header>
     
-    <video id="videoBG" poster="./img/poster.png" autoplay muted loop>
-        <source src="./img/video_about.mp4" type="video/mp4">
-    </video>
-    
-    <div class="section-video">
-        <div class="section-video-title">
-            <!-- <img src="./img/logo.png" alt=""> -->
-            <span><i class="fa fa-globe-americas"></i>RBM-soft</span>
-            <span>Создание веб-сайтов и веб-приложений</span>
-        </div>
-        <div class="section-video-arrow">
-            <a href="#section-about" data-target="target">
-                <i class="fa fa-chevron-down"></i>
-            </a>
-        </div>
+    <div class="template-bg">
+        <h2>Портфолиио студии веб-разработки</h2>
+        <p>Небольшая часть наших лучших работ</p>
     </div>
-    <div class="section-about" id="section-about">
-        <div class="section-about-wrapper">
-            <div class="section-about-wrapper-content">
-                <div class="wrapper">
-                    <h1>Желаете веб-сайт, <br> интернет-магазин <br> или веб-приложение? <br> Веб-студия RBM-soft!</h1>
-                    <p>Веб-студия RBM-soft является профессиональной командой разработчиков и менеджеров по продукту и имеет колоссальный опыт работы в России, Франции и Германии. За нашими плечами несколько успешных стартапов в сфере рекламы, интернет-торговли и онлайн-сервиса. Мы будем рады сотрудничеству.</p>
-                    <a href="portfolio.html">Наши работы</a>
+    
+    <div class="wrapper">
+        <div class="detail">
+            <div class="detail-img">
+                <img src="./img/preview-portfolio.jpg" alt="">
+            </div>
+            <div class="detail-content">
+                <div class="detail-content-title">
+                    <p>Magnetische Wimpern — Интернет-магазин реализован на платформе WooCommerce для продажи уникального продукта на территории Германии. Дизайн выполнен как продающая страница для одного товара.</p>
+                </div>
+                <div class="detail-content-worklist">
+                    <ul>
+                        <li>Дизайн</li>
+                        <li>Подбор картинок</li>
+                        <li>Создание логотипа</li>
+                        <li>Управление сайтом</li>
+                        <li>Отчет о доходах</li>
+                        <li>Paypal оплата</li>
+                        <li>Email-уведомления</li>
+                        <li>Автоматическое создание фактур и упаковочных листов</li>
+                        <li>Аналитика посещаемости</li>
+                        <li>Аналитика активности посетителей сайта</li>    
+                        <li>Мобильная адаптация</li>    
+                        <li>Онлайн-чат</li>    
+                    </ul>
+                    <span>URL: <a href="#">www.somesite.com</a></span>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <footer>
         <div class="wrapper">
             <div class="footer-content">
@@ -110,7 +119,9 @@
     </footer>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery.hover3d.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script src="./js/template.js"></script>
-   
+
 </body>
 </html>

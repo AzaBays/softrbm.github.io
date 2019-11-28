@@ -6,6 +6,7 @@ $(document).ready(function(){
         anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'service','section7',],
         navigationTooltips: ['Главная  -  ', 'Разработка веб-сайтов  -  ', 'Наши преимущества  -  ', 'Создание интернет магазинов  -  ', 'Концепт  -  ', 'Услуги  -  '],
         sectionsColor: ['#fff', '#fff', '#e1144b', 'fff', '#07befa', '#fff', '#fff'],
+        scrollOverflow: true,
         onLeave: function(origin, destination, direction){
             // console.log(destination.index);
             if(destination.index == 1){
@@ -20,11 +21,11 @@ $(document).ready(function(){
 
             if(!destination.isFirst) {
                 $(".main-bg").removeClass("main-animation");
-                $('.main-hero').children('img').removeClass('animated fadeInUp');
+                $('.main-img').removeClass('animated fadeInUp');
                 $('.main-title, .main-title p, .main-title a, .main-title .main-title_btns').removeClass('animated fadeInUp');
             }else {
                 $(".main-bg").addClass("main-animation");
-                $('.main-hero').children('img').addClass('animated fadeInUp');
+                $('.main-img').addClass('animated fadeInUp');
                 $('.main-title, .main-title p, .main-title a, .main-title .main-title_btns').addClass('animated fadeInUp');
             }
 

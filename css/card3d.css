@@ -1,26 +1,30 @@
-.project {
-  width: 100%;
-  width: 420px;
-  height: 420px;
-  margin-right: 35px;
+.project,
+.partners {
+  width: 22%;
+  margin-right: 3%;
   margin-bottom: 40px;
+  
 }
 
-.project__image {
+.project__image, 
+.partners__image{
   display: block;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 15px 2px #6879817e;
 }
 
-.project__image img {
+.project__image img,
+.partners__image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: 100%;
   display: block;
   transition: .3s ease;
 }
 
-.project__image:after {
+.project__image:after,
+.partners__image:after {
   content: " ";
   width: 100%;
   height: 100%;
@@ -32,48 +36,59 @@
   opacity: 0;
 }
 
-.project__card {
+.project__card,
+.partners__card {
   position: relative;
   will-change: transform;
   transition: box-shadow .3s ease;
   box-shadow: 0 10px 30px transparent;
 }
 
-.project__card.hover-in {
+.project__card.hover-in,
+.partners__card.hover-in {
   transition: -webkit-transform .2s ease-out;
   transition: transform .2s ease-out;
   transition: transform .2s ease-out, -webkit-transform .2s ease-out;
 }
 
-.project__card.hover-out {
+.project__card.hover-out,
+.partners__card.hover-out {
   transition: -webkit-transform .2s ease-in;
   transition: transform .2s ease-in;
   transition: transform .2s ease-in, -webkit-transform .2s ease-in;
 }
 
-.project:hover .project__card { box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
+.project:hover .project__card, 
+.partners:hover .partners__card {
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+}
 
-.project:hover .project__image:after { opacity: 1; }
+.project:hover .project__image:after,
+.partners:hover .partners__image:after { opacity: 1; }
 
-.project:hover .project__image img {
+.project:hover .project__image img,
+.partners:hover .partners__image img {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.project:hover .project__detail {
+.project:hover .project__detail,
+.partners:hover .partners__detail {
   border-width: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.project:hover .project__title, .project:hover .project__category {
+.project:hover .project__title, .project:hover .project__category,
+.partners:hover .partners__title, .partners:hover .partners__category {
   -webkit-transform: translateY(0) scale(1);
   -ms-transform: translateY(0) scale(1);
   transform: translateY(0) scale(1);
   opacity: 1;
 }
 
-.project__detail {
+.project__detail,
+.partners__detail {
   position: absolute;
   left: 30px;
   right: 30px;
@@ -96,7 +111,8 @@
   transition: border .4s ease;
 }
 
-.project__title {
+.project__title,
+.partners__title {
   margin: 0 0 10px;
   font-size: 28px;
   font-weight: 700;
@@ -108,9 +124,11 @@
   will-change: transform;
 }
 
-.project__title a { color: white; }
+.project__title a,
+.partners__title a { color: white; }
 
-.project__category {
+.project__category,
+.partners__category {
   opacity: 0;
   transition: .4s ease;
   transition-delay: .1s;
@@ -120,7 +138,8 @@
   will-change: transform;
 }
 
-.project__category a {
+.project__category a,
+.partners__category a {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.3em;
 }

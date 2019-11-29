@@ -495,4 +495,7 @@
     .detail-content-worklist ul li{
         margin-left: 30px;
     }
+    .section-video-arrow{
+        bottom: 120px;
+    }
 }

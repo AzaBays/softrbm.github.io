@@ -159,6 +159,9 @@
     .main-img img{
         display: none;
     }
+    .main-title_calc-btn .fa-calculator{
+        display: none;
+    }
     .ecommerce{
         width: 690px;
     }

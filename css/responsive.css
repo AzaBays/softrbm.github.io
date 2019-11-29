@@ -226,7 +226,7 @@
         padding: 11px 0;
     }
     .main-title_btns a{
-        padding: 10px 17px;
+        padding: 6px 14px;
         font-size: 10px;
     }
     .developing h2{
@@ -254,7 +254,7 @@
     }
     .developing-mockup .mockups-content{
         width: 160px;
-        padding: 10px;
+        padding: 5px;
         font-size: 9px;
     }
     .advantage .wrapper{
@@ -277,6 +277,7 @@
     .ecommerce{
         width: 100%;
         padding: 0 15px;
+        margin-top: 25px;
     }
     .ecommerce-img img{
         width: 100%;
@@ -399,5 +400,100 @@
     }
     .form-title p{
         width: 100%;
+    }
+}
+@media screen and (min-width: 315px) and (max-width: 411px){
+    .main-title h1{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .main-title p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .main-title_calc-btn{
+        font-size: 12px;
+        padding: 6px 0;
+    }
+    .developing h2{
+        font-size: 24px;
+    }
+    .adv-column .adv-column_item span{
+        font-size: 10px;
+    }
+    .adv-column .adv-column_item{
+        padding: 0;
+    }
+    .ecommerce-title h2{
+        font-size: 20px;
+    }
+    .ecommerce-title p,
+    .ecommerce-title_list ul li{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .concept-title h2{
+        width: 100%;
+        font-size: 22px;
+        line-height: 32px;
+        margin-top: 35px;
+    }
+    .concept-title p{
+        line-height: 22px;
+    }
+    .concept-title a{
+        padding: 8px;
+    }
+    .webapps-content h4{
+        margin-bottom: 30px;
+    }
+    .webapps-content p{
+        display: none;
+    }
+    .section-about-wrapper-content{
+        bottom: 30px;
+    }
+    .section-about-wrapper-content h1{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-about-wrapper-content p{
+        font-size: 13px;
+    }
+    .template-bg h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .template-bg p{
+        font-size: 14px;
+    }
+    .portfolio-project, .partners-project{
+        padding-left: 27px;
+    }
+    .configurator-content .content h6{
+        font-size: 30px;
+    }
+    .configurator-content .content .form{
+        padding: 10px;
+    }
+    .contact-video,
+    .contact-adress .adress{
+        height: 180px;
+    }
+    .contact-video-layer h1{
+        line-height: 30px;
+    }
+    .contact-adress .adress-content h5{
+        font-size: 18px;
+    }
+    .contact-adress .adress-content span{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .detail-content{
+        padding-left: 20px;
+    }
+    .detail-content-worklist ul li{
+        margin-left: 30px;
     }
 }

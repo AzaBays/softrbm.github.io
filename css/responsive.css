@@ -300,6 +300,9 @@
     .concept-title h2{
         font-size: 27px;
     }
+    .concept-title a{
+        padding: 8px;
+    }
     .webapps-content h4{
         margin-bottom: 0;
         font-size: 17px;
@@ -443,9 +446,7 @@
     .concept-title p{
         line-height: 22px;
     }
-    .concept-title a{
-        padding: 8px;
-    }
+    
     .webapps-content h4{
         margin-bottom: 30px;
     }

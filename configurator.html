@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="configurator-content">
-                <form action="">
+                <form action="" id="configurator-form">
                     <div class="content type">
                         <h6>Выберите тип разработки</h6>
                         <div class="content-items">
@@ -97,7 +97,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Лендинг пейдж">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Лендинг пейдж">
+                                </label>
                                 <span class="content-item-popup">Дизайн лендинг пейджа</span>
                                 <div class="content-item-title">Лендинг пейдж</div>
                             </div>
@@ -107,7 +109,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Веб-блог/Портфолио">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="300" data-title="Веб-блог/Портфолио">
+                                </label>
                                 <span class="content-item-popup">Дизайн веб-блога / Портфолио</span>
                                 <div class="content-item-title">Веб-блог/Портфолио</div>
                             </div>
@@ -117,7 +121,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Многостраничный сайт">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="350" data-title="Многостраничный сайт">
+                                </label>
                                 <span class="content-item-popup">Дизайн многостраничного сайта</span>
                                 <div class="content-item-title">Многостраничный сайт</div>
                             </div>
@@ -127,7 +133,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Интернет-портал">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="400" data-title="Интернет-портал">
+                                </label>
                                 <span class="content-item-popup">Дизайн интернет-портала</span>
                                 <div class="content-item-title">Интернет-портал</div>
                             </div>
@@ -137,7 +145,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Интернет-магазин">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="500" data-title="Интернет-магазин">
+                                </label>
                                 <span class="content-item-popup">Дизайн интернет-магазина</span>
                                 <div class="content-item-title">Интернет-магазин</div>
                             </div>
@@ -149,13 +159,13 @@
                             <div class="content-range" id="page">
                                 <span>Количество изначальных страниц</span>
                                 <outer for="page-range" class="range-volume" id="page-volume">1</outer>
-                                <input id="page-range" type="range" min="1" max="35" step="1" value="1">
+                                <input data-price="20" id="page-range" type="range" min="1" max="35" step="1" value="1">
                                 <span>Выберите количество требуемых страниц для начала работы сайта</span>
                             </div>
                             <div class="content-range" id="item">
                                 <span>Количество изначальных продуктов для заполнения</span>
                                 <outer for="item-range" class="range-volume" id="item-volume">1</outer>
-                                <input id="item-range" type="range" min="1" max="35" step="1" value="1">
+                                <input data-price="20" id="item-range" type="range" min="1" max="35" step="1" value="1">
                                 <span>Выберите количество требуемых продуктов для заполнения</span>
                             </div>
                             <div class="content-item" id="content">
@@ -164,7 +174,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно заполнить данные страницы контентом">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно заполнить данные страницы контентом">
+                                </label>
                                 <span class="content-item-popup">Заполнение страниц контентом</span>
                                 <div class="content-item-title">Нужно заполнить данные страницы контентом</div>
                             </div>
@@ -174,7 +186,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно подобрать картинки">
+                                </label>
                                 <span class="content-item-popup">Подбор картинок</span>
                                 <div class="content-item-title">Нужно подобрать картинки</div>
                             </div>
@@ -184,27 +198,29 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Добавить языки">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="0" data-title="Добавить языки">
+                                </label>
                                 <span class="content-item-popup">Поддержка мультиязычности</span>
                                 <div class="content-item-title">Добавить языки</div>
                             </div>
                         </div>
-                        <div class="content-checkbox" id="checkbox">
+                        <div class="content-checkbox" id="lang-checkbox">
                             <div class="checkbox">
                                 <span class="checkbox-title">Русский язык</span>
-                                <input type="checkbox" checked  id="russian">
+                                <input type="checkbox" data-price="100" checked  id="russian">
                             </div>
                             <div class="checkbox">
                                 <span class="checkbox-title">Узбекский язык</span>
-                                <input type="checkbox" id="uzbek">
+                                <input type="checkbox" data-price="100" id="uzbek">
                             </div>
                             <div class="checkbox">
                                 <span class="checkbox-title">Английский язык</span>
-                                <input type="checkbox" id="english">
+                                <input type="checkbox" data-price="100" id="english">
                             </div>
                         </div>
                         <div class="alert">Выберите опцию чтобы продолжить</div>
-                        <button class="content-btn-success"><i class="fas fa-check"></i> Далее</button>
+                        <span class="content-btn-success"><i class="fas fa-check"></i> Далее</span>
                     </div>
                     <div class="content payment">
                         <h6>Системы оплаты</h6>
@@ -216,7 +232,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно заполнить данные страницы контентом">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно заполнить данные страницы контентом">
+                                </label>
                                 <span class="content-item-popup">Интеграция банковских перефодов</span>
                                 <div class="content-item-title">Банковский перевод</div>
                             </div>
@@ -226,12 +244,14 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно подобрать картинки">
+                                </label>
                                 <span class="content-item-popup">Интеграция других форм отплаты</span>
                                 <div class="content-item-title">Другие формы оплаты</div>
                             </div>
                         </div>
-                        <button class="content-btn-success"><i class="fas fa-check"></i> Далее</button>
+                        <span class="content-btn-success"><i class="fas fa-check"></i> Далее</span>
                     </div>
                     <div class="content add-service">
                         <h6>Дополнительные сервисы</h6>
@@ -243,7 +263,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно заполнить данные страницы контентом">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно заполнить данные страницы контентом">
+                                </label>
                                 <span class="content-item-popup">Оптимизация для поисковых систем (SEO)</span>
                                 <div class="content-item-title">Оптимизация для поисковых систем (SEO)</div>
                             </div>
@@ -253,7 +275,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно подобрать картинки">
+                                </label>
                                 <span class="content-item-popup">Интеграция онлайн-чата</span>
                                 <div class="content-item-title">Интеграция онлайн-чата</div>
                             </div>
@@ -263,7 +287,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно подобрать картинки">
+                                </label>
                                 <span class="content-item-popup">Интеграция системы онлайн-букинга</span>
                                 <div class="content-item-title">Онлайн-букинг</div>
                             </div>
@@ -273,7 +299,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно подобрать картинки">
+                                </label>
                                 <span class="content-item-popup">Интеграция email-рассылки</span>
                                 <div class="content-item-title">Email-рассылка</div>
                             </div>
@@ -281,21 +309,21 @@
                         <div class="content-checkbox">
                             <div class="checkbox">
                                 <span class="checkbox-title">Google Analytics</span>
-                                <input type="checkbox" id="google">
+                                <input type="checkbox" data-price="100" id="google">
                                 <span>Google Аналитка посещяемости посетителей</span>
                             </div>
                             <div class="checkbox">
                                 <span class="checkbox-title">Yandex Metrika</span>
-                                <input type="checkbox" id="yandex">
+                                <input type="checkbox" data-price="100" id="yandex">
                                 <span>Yandex Аналитка посещяемости посетителей</span>
                             </div>
                             <div class="checkbox">
                                 <span class="checkbox-title">Создание Facebook страницы</span>
-                                <input type="checkbox" id="facebook">
+                                <input type="checkbox" data-price="100" id="facebook">
                                 <span>Мы создадим и привяжем FB страницу Вашей компании</span>
                             </div>
                         </div>
-                        <button class="content-btn-success"><i class="fas fa-check"></i> Далее</button>
+                        <span class="content-btn-success"><i class="fas fa-check"></i> Далее</span>
                     </div>
                     <div class="content other-service">
                         <h6>Вам нужна помощь?</h6>
@@ -307,7 +335,9 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно заполнить данные страницы контентом">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно заполнить данные страницы контентом">
+                                </label>
                                 <span class="content-item-popup">Поддержка сайта (5ч/мес)</span>
                                 <div class="content-item-title">Поддержка работы сайта и внесение мелких изменений</div>
                             </div>
@@ -317,17 +347,19 @@
                                     <span class="cross"><i class="fas fa-times"></i></span>
                                     <span class="success"><i class="fas fa-check"></i></span>
                                 </div>
-                                <input type="hidden" value="250" data-title="Нужно подобрать картинки">
+                                <label for="" class="content-check-label">
+                                    <input type="checkbox" data-price="250" data-title="Нужно подобрать картинки">
+                                </label>
                                 <span class="content-item-popup">Обучение (3ч)</span>
                                 <div class="content-item-title">Мы объясним как управлять веб-сайтом, не поломав основную структуру веб-сайта</div>
                             </div>
                         </div>
-                        <button class="content-btn-success"><i class="fas fa-check"></i> Далее</button>
+                        <span class="content-btn-success"><i class="fas fa-check"></i> Далее</span>
                     </div>  
                     <div class="content total">
                         <h6>Итог</h6>
                         <p>Стоимость указана без НДС. Желаете получить подробный расчет стоимости разработки?</p>
-                        <span class="count">$1200</span>
+                        <span class="count">$<span class="count-price"></span></span>
                         <div class="form" id="form-section">
                             <div class="form-contacts">
                                 <div class="form-contacts-box">
@@ -348,7 +380,7 @@
                                 <textarea class="input" name="message"></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="content-btn-success"><i class="fas fa-calculator"></i> Отправить</button>
+                        <button type="submit" class="form-btn-success"><i class="fas fa-calculator"></i> Отправить</button>
                     </div>  
                     <div class="content total">
                         <h6>Спасибо! Ваш запрос принят.</h6>

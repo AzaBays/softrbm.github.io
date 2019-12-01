@@ -1851,6 +1851,7 @@ textarea {
           align-items: center;
   position: relative;
   margin: 0 10px;
+  margin-bottom: 10px;
 }
 
 .configurator-content .content-range:hover .range-volume {

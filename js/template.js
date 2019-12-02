@@ -72,9 +72,8 @@ $(document).ready(function(){
 
     function calculatePrice(){
         var total = 0,
-            distancePrice = 0;
-
-        
+            distancePrice = 0,
+            rangeItem;
 
         $('.content-item').click(function(){
             var dataPrice = parseFloat($(this).children('label').children('input').attr('data-price'));
@@ -83,19 +82,13 @@ $(document).ready(function(){
             if($(this).children('label').children('input').prop('checked')){
                 total += dataPrice;
                 distancePrice += dataPrice/10;
-                
-                $('.price-place span').text(total);
-                $('.progress-line').css('width', distancePrice+20 + 'px');
-                $('.price-place').css({'transform': 'translateX(' + distancePrice + 'px)'});
             }else{
                 total -= dataPrice;
                 distancePrice -= dataPrice/10;
-                
-                $('.price-place span').text(total);
-                $('.progress-line').css('width', distancePrice+20 + 'px');
-                $('.price-place').css({'transform': 'translateX(' + distancePrice + 'px)'});
             }
-            
+            $('.price-place span').text(total);
+            $('.progress-line').css('width', distancePrice+20 + 'px');
+            $('.price-place').css({'transform': 'translateX(' + distancePrice + 'px)'});
 
             if($('#multi-lang').hasClass('checked')){
                 $('#lang-checkbox').css('display', 'flex');
@@ -104,34 +97,20 @@ $(document).ready(function(){
             }
         });
         
-        $('.content-range input').on('input', function(){
-            var page = $('#page-range').val();
-            var item = $('#item-range').val();
+        $('input[type="range"]').on('input', function(){
+            var item = $(this).val();
 
-            $('#page-volume').text(page);
-            $('#page-volume').css('left', page*5.1 -15 + 'px');
-            $('#item-volume').text(item);
-            $('#item-volume').css('left', item*5.1 -15 + 'px');
+            $(this).prev().text(item);
+            $(this).prev().css('left', item*5.1 -15 + 'px');
         });
 
-        $('#page-range').on('change', function(e){
+        $('input[type="range"]').on('change', function(){
             var vol = $(this).val(),
                 dataPrice = $(this).attr('data-price'),
                 range = parseFloat(vol) * parseFloat(dataPrice);
 
             total += range;
-            $('.price-place span').text(total);
-            distancePrice += range/10;
-            $('.progress-line').css('width', distancePrice+20 + 'px');
-            $('.price-place').css({'transform': 'translateX(' + distancePrice + 'px)'});
-        });
-        
-        $('#item-range').on('change', function(){
-            var vol = $(this).val(),
-                dataPrice = $(this).attr('data-price'),
-                range = parseFloat(vol) * parseFloat(dataPrice);
-
-            total += range;
+            
             $('.price-place span').text(total);
             distancePrice += range/10;
             $('.progress-line').css('width', distancePrice+20 + 'px');
@@ -141,24 +120,21 @@ $(document).ready(function(){
         $('.checkbox input[type="checkbox"]').click(function(){
             if(this.checked){
                 total += parseFloat($(this).attr('data-price'));
-                $('.price-place span').text(total);
                 distancePrice += parseFloat($(this).attr('data-price'))/10;
-                $('.progress-line').css('width', distancePrice+20 + 'px');
-                $('.price-place').css({'transform': 'translateX(' + distancePrice + 'px)'});
             }else{
                 total -= parseFloat($(this).attr('data-price'));
-                $('.price-place span').text(total);
                 distancePrice -= parseFloat($(this).attr('data-price'))/10;
-                $('.progress-line').css('width', distancePrice+20 + 'px');
-                $('.price-place').css({'transform': 'translateX(' + distancePrice + 'px)'});
             }
+            $('.price-place span').text(total);
+            $('.progress-line').css('width', distancePrice+20 + 'px');
+            $('.price-place').css({'transform': 'translateX(' + distancePrice + 'px)'});
         });
         // configurator
         $('.type .content-item').click(function(){
             configType(this);
         });
         $('.content-btn-success').click(function(){
-            $('.count-price').text($('.price-place span').text())
+            $('.count-price').text($('.price-place span').text());
             if(!$(this).attr('type')){
                 if($(this).parent().children().children('.content-item').hasClass('checked') || $(this).parent().children('p').attr('data-option')){
                     configType(this);
@@ -175,14 +151,14 @@ $(document).ready(function(){
                 }else{
                     $(data).parent().hide();
                 }
-            }, 1500);
+            }, 1300);
             setTimeout(function(){
                 if(data.parentNode.classList == 'content-items'){
                     $(data).parent().parent().next().css('display', 'flex');
                 }else{
                     $(data).parent().next().css('display', 'flex');
                 }
-            }, 1500);
+            }, 1300);
             
             if(data.id != 'landing'){
                 $('#page').css('display', 'flex');
